@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-zendesk-chat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gatsby plugin to add Zendesk chat widget to your site.",
   "keywords": [
     "gatsby",
