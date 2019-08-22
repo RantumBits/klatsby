@@ -14,7 +14,8 @@
     "url": "https://github.com/garethpbk/gatsby-plugin-zendesk-chat.git"
   },
   "scripts": {
-    "build": "babel src --out-dir",
+    "build": "babel src --out-dir .",
+    "prepare": "npm run build",
     "format": "prettier --write \"src/**/*.js\""
   },
   "dependencies": {},
