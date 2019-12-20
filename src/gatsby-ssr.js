@@ -6,7 +6,7 @@ exports.onRenderBody = (
 ) => {
   if (!enableDuringDevelop && process.env.NODE_ENV === 'development') {
     console.log(
-      'enableDuringDevelo is set to false - gatsby-plugin-zendesk-chat will not load in development mode',
+      'enableDuringDevelop is set to false - gatsby-plugin-zendesk-chat will not load in development mode',
     )
     return null
   }
