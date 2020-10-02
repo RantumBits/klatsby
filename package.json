@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-klaviyo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Gatsby plugin to add Klaviyo email marketing to your site.",
   "keywords": [
     "gatsby",
@@ -13,14 +13,16 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ecomloop/gatsby-plugin-klaviyo"
+    "url": "git+https://github.com/ecomloop/gatsby-plugin-klaviyo.git"
   },
   "scripts": {
     "build": "babel src --out-dir .",
     "prepare": "npm run build",
     "format": "prettier --write \"src/**/*.js\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "babel-cli": "^6.26.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
@@ -33,5 +35,10 @@
   },
   "engines": {
     "node": ">=6.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/ecomloop/gatsby-plugin-klaviyo/issues"
+  },
+  "homepage": "https://github.com/ecomloop/gatsby-plugin-klaviyo#readme",
+  "main": "index.js"
 }

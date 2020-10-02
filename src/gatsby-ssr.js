@@ -2,7 +2,7 @@ const React = require('react')
 
 exports.onRenderBody = (
   { setHeadComponents },
-  { tidioKey, enableDuringDevelop = true },
+  { klaviyoKey, enableDuringDevelop = true },
 ) => {
   if (!enableDuringDevelop && process.env.NODE_ENV === 'development') {
     console.log(
@@ -11,7 +11,7 @@ exports.onRenderBody = (
     return null
   }
 
-  if (!tidioKey) {
+  if (!klaviyoKey) {
     console.log(
       'No Klaviyo key provided! gatsby-plugin-klaviyo will not load. Please add klaviyoKey in gatsby-config.js',
     )
@@ -21,9 +21,9 @@ exports.onRenderBody = (
   return setHeadComponents([
     <script
       id="ze-snippet"
-      key="gatsby-plugin-klaviyo"	      
+      key="gatsby-plugin-klaviyo"
       src={`https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=${klaviyoKey}`}
-      type="text/javascript" 
+      type="text/javascript"
       async
     />,
   ])
