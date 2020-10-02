@@ -1,18 +1,19 @@
 {
-  "name": "gatsby-plugin-tidio-chat",
-  "version": "1.0.0",
-  "description": "Gatsby plugin to add Tidio chat widget to your site.",
+  "name": "gatsby-plugin-klaviyo",
+  "version": "0.1.0",
+  "description": "Gatsby plugin to add Klaviyo email marketing to your site.",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
-    "tidio",
-    "tidio chat"
+    "klaviyo",
+    "email marketing",
+    "email signup forms"
   ],
-  "author": "gareth bk <garethbk@gmail.com> https://gareth.cool",
+  "author": "ecomloop https://ecomloop.com",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/garethpbk/gatsby-plugin-tidio-chat.git"
+    "url": "https://github.com/ecomloop/gatsby-plugin-klaviyo"
   },
   "scripts": {
     "build": "babel src --out-dir .",

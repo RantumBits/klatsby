@@ -1,16 +1,16 @@
-# gatsby-plugin-tidio-chat
+# gatsby-plugin-klaviyo
 
-Easily add a [Tidio chat widget](https://www.tidio.com/) to a Gatsby site.
+Easily add [Klaviyo email marketing](https://www.klaviyo.com/) to a Gatsby site.
 
 ## Install
 
-`npm install --save gatsby-plugin-tidio-chat`
+`npm install --save gatsby-plugin-klaviyo`
 
 ## How to Use
 
-You'll need a Tidio account to use this plugin - sign up at [https://www.tidio.com/panel/register/](https://www.tidio.com/panel/register/).
+You'll need a Klaviyo account to use this plugin - sign up at [https://www.klaviyo.com/partner/signup?utm_source=0010V00002Ogx4q&utm_medium=partner).
 
-When you've signed up and logged in to the dashboard, go to Settings -> Developer and look for `Public Key` under Project Data.
+When you've signed up and logged in to the dashboard, go to Account -> Settings -> API Keys and look for the `API key / Site ID' in bold.
 
 In `gatsby-config.js` configure the plugin with your key:
 
@@ -18,10 +18,10 @@ In `gatsby-config.js` configure the plugin with your key:
 module.exports = {
   plugins: [
     {
-      resolve: 'gatsby-plugin-tidio-chat',
+      resolve: 'gatsby-plugin-klaviyo',
       options: {
-        tidioKey: 'your-tidio-key',
-        enableDuringDevelop: false, // Optional. Disables Tidio chat widget when running Gatsby dev server. Defaults to true.
+        klaviyoKey: 'your-klaviyo-key',
+        enableDuringDevelop: false, // Optional. Disables Klaviyo when running Gatsby dev server. Defaults to true.
       },
     },
   ],
@@ -32,6 +32,6 @@ Restart your Gatsby server for the plugin to take effect.
 
 ## Acknowledgements
 
-Based off of the author's [gatsby-plugin-zendesk-chat](https://github.com/garethpbk/gatsby-plugin-zendesk-chat/) which in turn was inspired by [gatsby-plugin-crisp-chat](https://github.com/ryanditjia/gatsby-plugin-crisp-chat/).
+Based off [gatsby-plugin-tidio-chat](https://github.com/garethpbk/tidio-chat/)
 
-There is an existing Gatsby Tidio plugin [gatsby-plugin-tidio](https://github.com/CodeDrips/gatsby-plugin-tidio) but it does not work and does not appear to be maintained, so better solution was to publish a new plugin rather than rely on a PR that doesn't seem likely to be addressed.
+Plugin updated for Klaviyo email marketing by [ecomloop](https://ecomloop.com]

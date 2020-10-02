@@ -6,14 +6,14 @@ exports.onRenderBody = (
 ) => {
   if (!enableDuringDevelop && process.env.NODE_ENV === 'development') {
     console.log(
-      'enableDuringDevelop is set to false - gatsby-plugin-tidio-chat will not load in development mode',
+      'enableDuringDevelop is set to false - gatsby-plugin-klaviyo will not load in development mode',
     )
     return null
   }
 
   if (!tidioKey) {
     console.log(
-      'No Tidio key provided! gatsby-plugin-tidio-chat will not load. Please add tidioKey in gatsby-config.js',
+      'No Klaviyo key provided! gatsby-plugin-klaviyo will not load. Please add klaviyoKey in gatsby-config.js',
     )
     return null
   }
@@ -21,8 +21,9 @@ exports.onRenderBody = (
   return setHeadComponents([
     <script
       id="ze-snippet"
-      key="gatsby-plugin-tidio-chat"
-      src={`//code.tidio.co/${tidioKey}.js`}
+      key="gatsby-plugin-klaviyo"	      
+      src={`https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=${klaviyoKey}`}
+      type="text/javascript" 
       async
     />,
   ])
