@@ -1,6 +1,6 @@
-# gatsby-plugin-klaviyo
+# Klatsby
 
-Easily add [Klaviyo email marketing](https://www.klaviyo.com/) to a Gatsby site.
+Easily add [Klaviyo email marketing](https://www.klaviyo.com/) to any Gatsby site. add email signup forms including exit intent popups
 
 ## Install
 

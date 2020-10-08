@@ -1,11 +1,12 @@
 {
-  "name": "gatsby-plugin-klaviyo",
-  "version": "0.1.1",
-  "description": "Gatsby plugin to add Klaviyo email marketing to your site.",
+  "name": "klatsby",
+  "version": "0.1.2",
+  "description": "klaviyo plugin for Gatsby. add email marketing & email signup forms, including exit-intent triggered popups, to any gatsbyjs site.",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
     "klaviyo",
+    "klatsby",
     "email marketing",
     "email signup forms"
   ],
